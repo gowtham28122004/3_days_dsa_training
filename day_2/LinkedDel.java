@@ -46,6 +46,7 @@ public class LinkedDel{
         }
         if(c == pos-1){
             t.next = t.next.next;
+            System.gc();
         }
         else{
             System.out.println("Position out of bounds.");
