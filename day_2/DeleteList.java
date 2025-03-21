@@ -49,6 +49,7 @@ public class DeleteList {
             if (pre.next != null) {
                 pre.next = pre.next.next;
                 System.out.println("Deleted node at position " + pos);
+                System.gc();
             } else {
                 System.out.println("No node exists at the specified position.");
             }
@@ -63,6 +64,7 @@ public class DeleteList {
                 t.next = t.next.next;
                 System.out.println("Deleted node with data: " + ele);
                 found = true;
+                System.gc();
                 break;
             }
             t = t.next;
